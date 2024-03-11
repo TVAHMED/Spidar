@@ -55,10 +55,6 @@ from zlib import decompress as dec
 from requests.exceptions import ConnectionError
 
 try:
-    IP = requests.get("http://ip-api.com/json/").json()["query"]
-    ___ccc___ = requests.get("http://ip-api.com/json/").json()["country"]
-
-try:
     os.system('clear')
     srv=requests.get('https://raw.githubusercontent.com/SEFAT-MAHADI/SPIDER/main/srv.txt').text 
     if "update" in srv:
@@ -72,8 +68,6 @@ try:
         os.system('clear')
         for j in range(1000):
             time.sleep(0.5)
-            os.system('xdg-open https://github.com/MAHADI-143')
-            print(f'\033[1;91m Tool is Currenty Off')
         exit()
 except requests.exceptions.ConnectionError:
     print(f"\033[1;91m Connection Problem, Please Check Your Internet And Run Again")
